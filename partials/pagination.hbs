@@ -1,0 +1,17 @@
+<!-- pagination.hbs -->
+{{!-- Pagination Attributes
+    page - the current page number
+    prev - the previous page number
+    next - the next page number
+    pages - the number of pages available
+    total - the number of posts available
+    limit - the number of posts per page --}}
+<nav class="pagination" role="navigation">
+    {{#if prev}}
+    <a class="newer-posts" href="{{page_url prev}}">&larr; Newer Posts</a>
+    {{/if}}
+    <span class="page-number">Page {{page}} of {{pages}}</span>
+    {{#if next}}
+    <a class="older-posts" href="{{page_url next}}">Older Posts &rarr;</a>
+    {{/if}}
+</nav>

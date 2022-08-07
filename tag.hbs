@@ -1,0 +1,21 @@
+<!-- tag.hbs -->
+{{!-- The default template for "tag" indeces --}}
+{{#is "tag"}}
+{{#tag}}
+<header>
+    {{#if feature_image}}
+    <img src="{{feature_image}}" alt="{{name}}" />
+    {{/if}}
+</header>
+<section class="author-profile">
+    <h1>{{name}}</h1>
+    {{#if description}}
+    <h2>{{description}}</h2>
+    {{/if}}
+</section>
+{{/tag}}
+{{/is}}
+<main role="main">
+    {{> "loop"}}
+</main>
+{{pagination}}

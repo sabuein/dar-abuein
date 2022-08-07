@@ -1,0 +1,27 @@
+<!-- author-sabuein.hbs -->
+{{!-- My own "author" index page template --}}
+{{#is "author"}}
+{{#author}}
+<header class="author-header">
+    {{#if profile_image}}
+    <img src="{{img_url profile_image}}" alt="{{name}}\'s Avatar" />
+    {{/if}}
+</header>
+<section class="author-avatar">
+    <h1 class="author-name">{{name}}</h1>
+    {{#if bio}}
+    <h2 class="author-bio">{{bio}}</h2>
+    {{/if}}
+    <div class="author-meta">
+        {{plural ../pagination.total empty="No posts" singular="% post" plural="% posts"}}
+    </div>
+</section>
+{{/author}}
+
+<main role="main">
+    {{> "loop"}}
+</main>
+{{/is}}
+
+{{!-- Previous/next page links - displayed on every page --}}
+{{pagination}}

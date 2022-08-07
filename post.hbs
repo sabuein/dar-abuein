@@ -1,0 +1,27 @@
+<!-- post.hbs -->
+{{!-- A general templage for both posts (and pages) that does not use a custom template --}}
+{{#is "post"}}
+{{#post}}
+<main role="main">
+    <article {{post_class}}>
+        <header class="post-header">
+            <h2>{{title}}</h2>
+            <section class="head-meta">
+                <span>
+                    <time class="head-date" datetime="{{date format='YYYY-MM-DD'}}">
+                        &nbsp;{{date format="DD MMMM YYYY"}}
+                    </time>
+                </span>
+                <span class="head-tags">&nbsp;{{tags prefix=" on "}}</span>
+            </section>
+        </header>
+        <section class="post-content">
+            {{content}}
+        </section>
+        <footer class="post-footer">
+            <h5>Thank you!</h5>
+        </footer>
+    </article>
+</main>
+{{/post}}
+{{/is}}

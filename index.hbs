@@ -1,0 +1,29 @@
+<!-- index.hbs -->
+{{!-- A general templage for posts (and pages) indecies that does not use a custom template --}}
+{{#is "index"}}
+<main role="main">
+    {{#foreach posts}}
+    <article class="{{post_class}}">
+        <header>
+            <h1 class="page-title">{{@site.title}}</h1>
+            <h2 class="page-description">{{@site.description}}</h2>
+        </header>
+        <section>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, non fugit!</p>
+                <p>Numquam at et, suscipit blanditiis mollitia repellendus veniam. Sapiente eaque,<br />
+                ducimus sequi quasi ipsum animi libero maiores officiis.</p>
+            </div>
+            <div>
+                {{> "loop"}}
+            </div>
+        </section>
+        <footer>
+            <h5>Thank you!</h5>
+        </footer>
+    </article>
+    {{/foreach}}
+</main>
+{{/is}}
+{{!-- Previous/next page links - displayed on every page --}}
+{{pagination}}
