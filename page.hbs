@@ -1,4 +1,28 @@
 <!-- page.hbs -->
 {{!-- A general templage for pages that does not use a custom template --}}
+{{!< default}}
 {{#is "page"}}
+{{#post}}
+<main role="main">
+    <article {{post_class}}>
+        <header class="page-header">
+            <h2>{{title}}</h2>
+            <section class="page-meta">
+                <span>
+                    <time class="head-date" datetime="{{date format='YYYY-MM-DD'}}">
+                        &nbsp;{{date format="DD MMMM YYYY"}}
+                    </time>
+                </span>
+                <span class="head-tags">&nbsp;{{tags prefix=" on "}}</span>
+            </section>
+        </header>
+        <section class="page-content">
+            {{content}}
+        </section>
+        <footer class="page-footer">
+            <h5>Thank you!</h5>
+        </footer>
+    </article>
+</main>
+{{/post}}
 {{/is}}
