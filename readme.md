@@ -1,10 +1,11 @@
-# AbuEin.com Ghost\'s theme
+AbuEin.com Ghost\'s theme
+=========================
 
 Here I'll be creating a Ghost custom theme for [abuein.com][domain] that supports RTL languages, mainly Arabic.
 
 ## Dar AbuEin
 
-The [domain][domain] name, which has been given the title of ***Dar AbuEin***, has been registered on [Google Domains][google] for a while now and, currently, is being built on [Ghost][ghost] while hosted on [Linode][linode].
+The [domain][domain] name, which has been given the title of ***Dar AbuEin***, has been registered on [Google Domains][google] for a while and currently being built with [Ghost][ghost] v5.8.0 while being hosted by [Linode][linode], they are great.
 
 **Dar AbuEin** is prefixed with the word `Dar`, which can mean a publishing house, and that\'s excatly the main aim of this project\'s [repository][repo], to help with publishing content, elegantly, together, with the use of modern technologies while providing full support to RTL languages, espcially Arabic.
 
@@ -17,7 +18,7 @@ To continue, the [domain][domain] name\'s title is suffixd by my last name, my f
 + [JavaScript ES6][javascript]
 + [Handlebars.js][handle]
 
-#### Conect with me:
+#### Connect with me:
 
 - [LinkedIn][linkedin]
 - [Twitter][twitter]
@@ -33,7 +34,7 @@ Peace and love,\
 Salah.
 
 [domain]: https://abuein.com/ "Dar AbuEin"
-[google-domains]: https://domains.google/intl/en_uk/ "Google Domains: Register your domain name"
+[google-domains]: https://domains.google/ "Google Domains: Register your domain name"
 [ghost]: https://ghost.org/ "Ghost: Turn your audience into a business"
 [linode]: https://www.linode.com/ "Linode: Cloud computing & Linux servers, alternative to AWS"
 [repo]: https://github.com/sabuein/ghost.abuein.com "sabuein/ghost.abuein.com: Viva la familia!"
