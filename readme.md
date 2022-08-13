@@ -5,9 +5,9 @@ Here I'll be creating a Ghost custom theme for [abuein.com][domain] that support
 
 ## Dar AbuEin
 
-The [domain][domain] name, which has been given the title of ***Dar AbuEin***, has been registered on [Google Domains][google] for a while and currently being built with [Ghost][ghost] v5.8.0 while being hosted by [Linode][linode], they are great.
+The [domain][domain] name, which has been given the title of ***Dar AbuEin***, has been registered on [Google Domains][google-domains] for a while and is currently being built with [Ghost][ghost] v5.8.0 while hosted by [Linode][linode], they are great.
 
-**Dar AbuEin** is prefixed with the word `Dar`, which can mean a publishing house, and that\'s excatly the main aim of this project\'s [repository][repo], to help with publishing content, elegantly, together, with the use of modern technologies while providing full support to RTL languages, espcially Arabic.
+**Dar AbuEin** is prefixed with the word `Dar`, which can mean a publishing house, and that\'s precisely the main aim of this project\'s [repository][repo], to help with publishing content, elegantly, together, with the use of modern technologies while providing support to the RTL languages, especially Arabic.
 
 To continue, the [domain][domain] name\'s title is suffixd by my last name, my family name, `AbuEin`, which means the *father* of the *eye*, first as a tribute to my family, and secondly, as a way to show myself, and what\'s inside me to you, and to the world, insha\'Allah, and to become a good magician.
 
