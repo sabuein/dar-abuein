@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{@site.locale}}">
-    <!-- default.hbs -->
-    {{!-- The default templage to run on any .hbs template that uses the XXXX at
-    the start of their code, used mainly to place your boilerplate code --}}
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +11,9 @@
         <title>{{meta_title}}</title>
         {{ghost_head}}
     </head>
+    <!-- default.hbs -->
+    {{!-- The default templage to run on any .hbs template that uses the {{!< default}} at
+    the start of their code, used mainly to place your boilerplate code --}}
     <body class="{{body_class}}">
         <header>
             <h1>Hello, World!</h1>
