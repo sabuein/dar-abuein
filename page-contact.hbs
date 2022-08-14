@@ -1,0 +1,29 @@
+{{!< default}}
+{{#is "page"}}
+{{#post}}
+<main role="main">
+    <article {{post_class}}>
+        <header>
+            <h1>Contact</h1>
+        </header>
+        <section>
+                    <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+        </section>
+        <footer>
+            Follow me on social media.
+        </footer>
+    </article>
+</main>
