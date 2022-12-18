@@ -1,0 +1,26 @@
+{{!< default}}
+<!-- home.hbs -->
+{{!-- The default homepage templage --}}
+{{#is "home"}}
+<main role="main">
+    <article class="{{post_class}}">
+        <header>
+            <h1 class="page-title">{{@site.title}}</h1>
+            <h2 class="page-description">{{@site.description}}</h2>
+        </header>
+        <section>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, non fugit!</p>
+                <p>Numquam at et, suscipit blanditiis mollitia repellendus veniam. Sapiente eaque,<br />
+                ducimus sequi quasi ipsum animi libero maiores officiis.</p>
+            </div>
+            <div>
+                {{> "loop"}}
+            </div>
+        </section>
+        <footer>
+            <h5>Thank you!</h5>
+        </footer>
+    </article>
+</main>
+{{/is}}

@@ -42,7 +42,7 @@ html {
 body {
     color: var(--first-font-color);
     background-color: var(--first-bg-color);
-    width: 600px;
+    width: 800px;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px 20px 20px;
@@ -95,6 +95,12 @@ strong,
 figcaption {
     padding: 1em;
     border-width: 1px;
+}
+
+p {
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 p,
@@ -285,6 +291,9 @@ input[type="search"] {
     box-sizing: content-box;
 }
 
+.kg-width-wide {
+    width: 100%;
+}
 
 @media screen and (max-width:64em) {
 

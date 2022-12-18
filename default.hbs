@@ -5,42 +5,53 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{{meta_title}}">
-        <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset " css/screen.css"}}" />
         <script src="{{asset 'js/app.js'}}"></script>
         <script src="{{asset 'js/pwa.js'}}"></script>
-        <title>{{meta_title}}</title>
+        <title>&rlm;{{meta_title}}</title>
+        {{!-- If you have a LTR text that begins with a strong RTL character, use &lrm; at the start, instead. --}}
         {{ghost_head}}
     </head>
     <!-- default.hbs -->
-    {{!-- The default templage to run on any .hbs template that uses the {{!< default}} at
-    the start of their code, used mainly to place your boilerplate code --}}
-    <body class="{{body_class}}">
+    {{!-- The default templage to run on any .hbs template that uses the {{!< default}} at the start of their code, used
+    mainly to place your boilerplate code --}}
+
+    <body class="{{body_class}}" dir="rtl">
         <header>
-            <h1>Hello, World!</h1>
-            <h2>{{title}}</h2>
-            {{#if @site.navigation}}
-            <a class="menu-button" href="#"><span class="word">Menu</span></a>
-            {{/if}}
+            <div>
+                {{#if @site.logo}}
+                <img class="site-logo" src="{{img_url @site.logo size=" l"}}" alt="{{@site.title}}" />
+                {{else}}
+                <h1>{{@site.title}}</h1>
+                <h2>{{@site.description}}</h2>
+                {{/if}}
+            </div>
             <nav>
-                <dl class="main-nav">
-                    <dh>
-                        Head
-                    </dh>
-                    <dd>
-                        Description
-                    </dd>
-                </dl>
+                {{#if @site.navigation}}
+                {{navigation}}
+                <a class="menu-button" href="#"><span class="word">Menu Item</span></a>
+                {{/if}}
             </nav>
         </header>
-        <div id="mainview">
+        <section id="quote-in-ltr">
+            <blockquote dir="ltr" lang="en" cite="Romeo and Juliet (II, ii, 1-2)">But, soft! What light through yonder
+                window breaks? It is the east, and Juliet is the sun.</blockquote>
+        </section>
+        <section id="mainview">
             {{{body}}}
-        </div>
+        </section>
         <footer>
-            {{#if @site.secondary_navigation}}
-            {{navigation type="secondary"}}
-            <a class="menu-button" href="#"><span class="word">Menu</span></a>
-            {{/if}}
+            <div>
+                {{#if @site.secondary_navigation}}
+                {{navigation type="secondary"}}
+                <a class="menu-button" href="#"><span class="word">Menu</span></a>
+                {{/if}}
+            </div>
         </footer>
+        {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some
+        JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already
+        loaded. --}}
+        {{{block "scripts"}}}
         {{!-- Must be the last thing before the closing body tag --}}
         {{ghost_foot}}
     </body>

@@ -1,5 +1,5 @@
 {{#if isSecondary}}
-<ul class="nav" role="menu">
+<menu class="nav" role="menu">
     {{#foreach navigation}}
     <li class="nav-{{slug}}" role="menuitem">
         <a href="{{url}}">
@@ -10,13 +10,13 @@
         </a>
     </li>
     {{/foreach}}
-</ul>
+</menu>
 {{else}}
-<ul class="nav" role="menu">
+<menu class="nav" role="menu">
     {{#foreach navigation}}
     <li class="{{link_class for=(url) class=(concat " nav-" slug)}}" role="menuitem">
         <a href="{{url absolute=" true"}}">{{label}}</a>
     </li>
     {{/foreach}}
-</ul>
+</menu>
 {{/if}}
